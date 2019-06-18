@@ -1,3 +1,48 @@
-<p>
-  home works!
-</p>
+<header class="header">
+  <img src="assets/images/bci-logo-personas.png" class="header__logo" alt="logo-bci-personas">
+  <h1 class="header__title">Star Wars</h1>
+  <h1 class="header__subtitle">Characters</h1>
+  <p class="header__paragraph">Star Wars es una franquicia compuesta primordialmente de</p>
+  <p class="header__paragraph">una seria de películas concebidas por el cineasta</p>
+  <p class="header__paragraph pb-1">estadounidense George Lucas</p>
+      <button class="btn btn--green">Conoce más</button>
+</header>
+
+<section class="separador">
+  <ul class="separador__list">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
+</section>
+
+<section id="characters" class="characters">
+  <h2>Personajes de Star Wars</h2>
+  <article class="characters__character" *ngFor="let character of characters">
+      <img [src]="character.image" class="characters__profile-image" alt="Darth Vader">
+      <h3>{{ character.name }}</h3>
+      <div>
+        <h5>Estatura</h5>
+        <p>{{ character.height }}cms</p>
+      </div>
+      <div>
+        <h5>Planeta</h5>
+        <p>{{ character.homeworld }}</p>
+      </div>
+      <div>
+        <h5>Naves</h5>
+        <p *ngFor="let starship of character.starships">{{ starship }}</p>
+      </div>
+      <a href="">Conoce más <i class="fa fa-chevron-circle-right fa-lg" style="color:blue"></i></a>
+    </article>
+</section>
+
+<section class="separador">
+  <ul class="separador__list">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
+</section>

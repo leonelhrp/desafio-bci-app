@@ -12,7 +12,7 @@ export class CharactersService {
   ) {}
 
   getAll(): Observable<[string]> {
-    return this.apiService.get('/characters')
+    return this.apiService.get('/api/characters')
       .pipe(map(data => data));
   }
 

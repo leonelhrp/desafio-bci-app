@@ -1,0 +1,102 @@
+.header {
+  text-align: left;
+  color: #000;
+  padding: 10rem 5rem;
+  background-image: url('../../assets/images/star-wars.png');
+  background-repeat: no-repeat;
+  background-size: 60rem;
+  background-position: right;
+
+  &__subtitle {
+    margin-left: 10rem;
+    color: #009639;
+  }
+}
+.separador {
+
+  &__list {
+    position: relative;
+    display: inline-block;
+    margin: 0px;
+    padding: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-left:20px;
+
+    & li {
+      float: left;
+      font-size: 30px;
+      list-style-position: inside;
+      padding-left: 0px;
+      padding-right: 30px;
+      width: 0px;
+      line-height: 18px;
+
+      &:nth-child(1) {
+        color: #009639;
+      }
+
+      &:nth-child(2) {
+        color: #f6303e;
+      }
+
+      &:nth-child(3) {
+        color: #007fc6;
+      }
+
+      &:nth-child(4) {
+        color: #f9da29;
+      }
+    }
+  }
+}
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 22px;
+  font-size: 14px;
+  display: inline-block;
+  margin-bottom: 10px;
+  transition: all 500ms ease;
+  font-family: inherit;
+  text-transform: uppercase;
+
+  &--green {
+    background-color: #18A94F;
+    border: 2px solid #18A94F;
+    color: #fff;
+
+    &:hover {
+      background-color: transparent;
+      color: #18A94F;
+    }
+  }
+}
+
+section {
+  margin-top: 4.5rem;
+}
+
+.characters__character {
+  display: inline-block;
+  margin: 3rem;
+}
+
+.header {
+  &__logo {
+    width: 8rem;
+  }
+}
+
+.characters {
+  &__profile-image {
+    border-radius: 50%;
+    width: 13rem;
+    height: 13rem;
+  }
+}
+
+.pb-1 {
+  padding-bottom: 1rem;
+}
+
